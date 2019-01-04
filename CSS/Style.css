@@ -1,0 +1,103 @@
+html{
+	height:100%
+}
+
+body{
+	text-align:center;
+	height: 100%
+}
+
+.BackgroundImage {
+	background-image: url("../Assets/theclick.jpg");
+	height: 1620px;
+	width: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+	background-position: top;
+}
+
+.header {
+	/*background-color: #f1f1f1;*/
+	padding: 11%;
+	text-align: center;
+}
+
+.nav {
+	position: relative;
+	left: 37%;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.menu {
+	padding: 10px;
+	font-size: 24px;
+	position: absolute;
+	text-align: center;
+	/*background-color: #f1f1f1;*/
+	margin-top: 60px;
+	left: 9%;
+	font-family: verdana;
+}
+
+.video {
+	padding: 20px;
+	position: absolute;
+	text-align: center;
+	left: -270%;
+	/*background-color: #f1f1f1;*/
+	margin-top: 200px;
+	width: 100%;
+}
+
+.aboutContent {
+	padding: 100px;
+}
+
+ul {
+	overflow: hidden;
+	background-color: #D3D3D3;
+	border-radius:25px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	width: 490px;
+}
+
+li {
+	display: inline;
+	float: left;
+	border-right: 1px solid black;
+}
+
+li a {
+	text-align: center;
+	display: block;
+	color: #fff;
+	font-family: verdana;
+	font-size: 24px;
+	padding: 12px 14px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #A9A9A9;
+	color: black;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+table, th, td {
+	background-color: #D3D3D3;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table {
+	border-radius:25px;
+}
+
