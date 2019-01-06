@@ -52,7 +52,14 @@ body{
 }
 
 .aboutContent {
+	position:relative;
 	padding: 100px;
+	width: 500px;
+	left: 31.5%;
+	background-color: #f1f1f1;
+	font-family: verdana;
+	border: 1px solid black;
+	border-radius: 40px;
 }
 
 ul {
@@ -99,5 +106,13 @@ table, th, td {
 
 table {
 	border-radius:25px;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+p {
+	font-size; 24px;
 }
 
