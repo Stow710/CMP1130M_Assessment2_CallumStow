@@ -37,7 +37,7 @@ body{
 	text-align: center;
 	/*background-color: #f1f1f1;*/
 	margin-top: 60px;
-	left: 9%;
+	left: 45%;
 	font-family: verdana;
 }
 
@@ -45,7 +45,7 @@ body{
 	padding: 20px;
 	position: absolute;
 	text-align: center;
-	left: -270%;
+	left: -250%;
 	/*background-color: #f1f1f1;*/
 	margin-top: 200px;
 	width: 100%;
