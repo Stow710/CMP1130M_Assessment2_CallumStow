@@ -4,16 +4,18 @@ html{
 
 body{
 	text-align:center;
-	height: 100%
+	height: 100%;
+	margin:0;
+    padding:0;
 }
 
 .BackgroundImage {
 	background-image: url("../Assets/theclick.jpg");
-	height: 1620px;
+	height: 1.8em;
 	width: 100%;
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 	background-position: top;
 }
 
@@ -60,6 +62,200 @@ body{
 	font-family: verdana;
 	border: 1px solid black;
 	border-radius: 40px;
+}
+
+.Album_TheClick input{
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.Album_LivingRoom input{
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.Album_TheClick {
+	float: left;
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.Album_LivingRoom{
+	max-width: 250px;
+	max-height: 250px;
+	margin-left: 15%;
+}
+
+.Album_Container {
+	padding: 20px;
+	margin: auto;
+	width: auto;
+	position: relative;
+	left: 36%;
+}
+
+.AlbumMenu {
+	width: 30%;
+	left: 36%;
+	position: relative;
+}
+
+.AlbumMenu table{
+	background-color: #D3D3D3;
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+
+.AlbumMenu tr {
+	font-family: verdana;
+	font-size: 1.5em;
+}
+
+.AlbumMenu td {
+	width: 1.5em;
+}
+
+.ShoppingCart {
+	position:relative;
+	padding: 100px;
+	width: 500px;
+	left: 31.5%;
+	background-color: #FFFFFF;
+	font-family: verdana;
+	border: 1px solid black;
+	box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.SC_Title {
+	height: 60px;
+	border-bottom: 3px solid black;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.Item {
+	padding: 20px 30px;
+	height: 225px;
+	display: flex;
+}
+
+.Item:nth-child(3) {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.Buttons {
+	position: relative;
+	padding-top: 30px;
+	margin-right: 60px;
+}
+
+.del-button {
+	display: inline-block;
+	cursor: pointer;
+	width: 18px;
+	height: 17px;
+	background: url(&quot;delete-icn.svg&quot;) no-repeat center;
+}
+
+.fav-button {
+	display: inline-block;
+	cursor: pointer;	
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	background: url('twitter-heart.png');
+	width: 60px;
+	height: 60px;
+	background-size: 2900%;
+	background-repeat: no-repeat;
+}
+
+.is-active {
+	animation-name: animate;
+	animation-duration: .8s;
+	animation-iteration-count: 1;
+	animation-timing-function: steps(28);
+	animation-fill-mode: forwards;
+}
+
+.ItemImage {
+	margin-right: 50px;
+}
+
+.desc {
+	  padding-top: 10px;
+	  margin-right: 60px;
+	  width: 115px;
+}
+
+.desc span {
+	  display: block;
+	  font-size: 14px;
+	  color: #43484D;
+	  font-weight: 400;
+}
+
+.desc span:first-child {
+	margin-bottom: 5px;
+}
+.desc span:last-child {
+	  font-weight: 300;
+	  margin-top: 8px;
+	  color: #86939E;
+}
+
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button[class*=btn] {
+	width: 30px;
+	height: 30px;
+	background-color: #E1E8EE;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+}
+.Minus-Btn img {
+	margin-bottom: 3px;
+}
+.Plus_Btn img {
+	margin-top: 2px;
+}
+ 
+button:focus,
+input:focus {
+	outline:0;
+}
+
+.Total_Price {
+	  width: 83px;
+	  padding-top: 27px;
+	  text-align: center;
+	  font-size: 16px;
+	  color: #43484D;
+	  font-weight: 300;
+}
+ 
+@keyframes animate {
+	0%   { background-position: left;  }
+	50%  { background-position: right; }
+	100% { background-position: right; }
 }
 
 ul {
@@ -116,3 +312,28 @@ p {
 	font-size; 24px;
 }
 
+@media (max-width: 800px) {
+  .ShoppingCart {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .Item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ItemImage img {
+    width: 50%;
+  }
+  .ItemImage,
+  .quantity,
+  .desc {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
