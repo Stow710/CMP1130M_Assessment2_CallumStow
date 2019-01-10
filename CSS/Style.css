@@ -27,6 +27,14 @@ body{
 
 .nav {
 	position: relative;
+	left: 35%;
+	padding: 10px;
+	font-size: 16px;
+	overflow: hidden;
+}
+
+.nav1 {
+	position: relative;
 	left: 37%;
 	padding: 10px;
 	font-size: 16px;
@@ -113,6 +121,28 @@ body{
 }
 
 .AlbumMenu td {
+	width: 1.5em;
+}
+
+.Tours {
+	width: 30%;
+	left: 36%;
+	position: relative;
+}
+
+.Tours table{
+	background-color: #D3D3D3;
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+
+.Tours tr {
+	font-family: verdana;
+	font-size: 1.5em;
+}
+
+.Tours td {
 	width: 1.5em;
 }
 
@@ -223,7 +253,7 @@ body{
   font-weight: 300;
 }
  
-button[class*=btn] {
+button[class*=Btn] {
 	width: 30px;
 	height: 30px;
 	background-color: #E1E8EE;
@@ -251,12 +281,6 @@ input:focus {
 	  color: #43484D;
 	  font-weight: 300;
 }
- 
-@keyframes animate {
-	0%   { background-position: left;  }
-	50%  { background-position: right; }
-	100% { background-position: right; }
-}
 
 ul {
 	overflow: hidden;
@@ -266,7 +290,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	border: 1px solid black;
-	width: 490px;
+	width: 600px;
 }
 
 li {
@@ -305,7 +329,10 @@ table {
 }
 
 h1 {
-	font-size: 32px;
+	height: 60px;
+	border-bottom: 3px solid black;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 p {
